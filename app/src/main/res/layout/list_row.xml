@@ -1,0 +1,76 @@
+
+<layout >
+    <data>
+
+        <variable
+            name="MainActivity"
+            type="com.hasid.customdialog.activity.MainActivity" />
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginRight="5dp"
+        android:padding="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_corner"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            >
+            <TextView
+                android:id="@+id/textMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24 months"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/textNoCostEMI"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Cost EMI"
+                android:layout_below="@id/textMonth"
+                android:background="#fff4eb"
+                android:layout_marginTop="2dp"
+                android:padding="3dp"
+                android:textColor="#ff9f14"
+                android:textSize="12sp"/>
+            <ImageView
+                android:id="@+id/imageForward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
+
+            <TextView
+                android:id="@+id/textPricePerMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹1,875/mo"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@id/imageForward"
+                android:textSize="15sp"/>
+            <TextView
+                android:id="@+id/textPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹45,000"
+                android:textColor="#B1BCBE"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:layout_below="@id/textPricePerMonth"
+                android:layout_toLeftOf="@id/imageForward"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
